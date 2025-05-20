@@ -189,4 +189,4 @@ blockReward: "5086562212310617100"
 
 }
 
-请下载文档了解更多Nexus API 文档
+请下载Nexus_APIS.docx文档了解更多Nexus API 文档
