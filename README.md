@@ -43,47 +43,86 @@ SDK参考：包含Solidity合约开发规范
 
 提示：各模块API的参数说明在文档"Nexus API约定"部分统一描述，具体接口文档中不再重复。
 
+
 API文档
+
 参数
 参数说明：
+
 module: 指明接口所属模块，即上面包含的模块
+
 action: API动作，如：txlist - 表示列出交易记录；
+
 address: 所查询交易的账号地址；
+
 contractaddress: 合约地址
+
 apikey: 用户API-key 根据key来统计请求限额；
+
 startblock: 起始查询块 id，可选，默认值为 0；
+
 endblock: 结束查询块 id，可选，默认值为最后一个区块；
+
 tag: 状态：pending 或 latest
+
 blocktype: 块类型：blocks（主链块） 或 uncles （叔块）
+
 page: 页码，可选；
+
 offset: 每页查询记录数，可选，默认是查询 10000 条记录；
+
 sort: 排序规则，支持正序asc和倒序desc。
+
 Nexus API 约定
+
 Nexus API文档时间为2025年5月，因官方API没有版本号，这里用时间做一个标注。
+
 包含模块
+
 Nexus API主要包含模块有：
+
 账号地址相关接口
+
 智能合约相关接口
+
 交易相关接口
+
 区块相关接口
+
 事件日志相关接口
 
 这些模块对应着左侧的一级菜单，在接口中使用module参数指定
+
 参数
+
 参数说明：
+
 module: 指明接口所属模块，即上面包含的模块
+
 action: API动作，如：txlist - 表示列出交易记录；
+
 address: 所查询交易的账号地址；
+
 contractaddress: 合约地址
+
 apikey: 用户API-key 根据key来统计请求限额；
+
 startblock: 起始查询块 id，可选，默认值为 0；
+
 endblock: 结束查询块 id，可选，默认值为最后一个区块；
+
 tag: 状态：pending 或 latest
+
 blocktype: 块类型：blocks（主链块） 或 uncles （叔块）
+
 page: 页码，可选；
+
 offset: 每页查询记录数，可选，默认是查询 10000 条记录；
+
 sort: 排序规则，支持正序asc和倒序desc。
+
 module、action、apikey是每个 API 都有的参数，其他的参数则因不同 API 而不同，这里做一个统一的介绍，后面介绍接口时不再单独说明。
+
 
 账号(Account)
 账号及地址相关的 API，接口的参数说明请参考Nexus API 约定, 文档中不单独说明。
